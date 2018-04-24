@@ -1,4 +1,4 @@
-package model;
+package model.weatherModels;
 
 import java.math.BigDecimal;
 
