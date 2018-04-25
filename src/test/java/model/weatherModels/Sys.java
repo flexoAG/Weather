@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Sys {
 
     private Integer type;
-    private Integer id;
+    private Integer sys_class_id;
     private BigDecimal message;
     private String country;
     private Integer sunrise;
@@ -19,12 +19,12 @@ public class Sys {
         this.type = type;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getSys_class_id() {
+        return sys_class_id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setSys_class_id(Integer sys_class_id) {
+        this.sys_class_id = sys_class_id;
     }
 
     public BigDecimal getMessage() {

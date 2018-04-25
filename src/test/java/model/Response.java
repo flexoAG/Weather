@@ -18,7 +18,7 @@ import java.util.List;
     private Clouds clouds;
     private int dt;
     private Sys sys;
-    private int id2;
+    private int property_id;
     private String name;
     private int cod;
     //    @JsonProperty("MaiN35  nuzhnoe nazvanie")
@@ -92,12 +92,12 @@ import java.util.List;
     public void setSys(Sys sys) {
         this.sys = sys;
     }
-    public int getId2() {
-        return id2;
+    public int getProperty_id() {
+        return property_id;
     }
 
-    public void setId2(int id2) {
-        this.id2 = id2;
+    public void setProperty_id(int property_id) {
+        this.property_id = property_id;
     }
     public String getName() {
         return name;

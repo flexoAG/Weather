@@ -27,9 +27,9 @@ public class WeatherStepDefs {
             Assert.assertEquals("Wrong LAT: ", lat, response.getCoord().getLat());
         }
 
-    @Then("ID should be (.*)")
-    public void check_id(int id) {
-        Assert.assertEquals("Wrong ID: ", id, response.getWeather().get(0).getId());
+    @Then("WEATHER_CLASS_ID should be (.*)")
+    public void check_weather_class_id(Integer weather_class_id) {
+        Assert.assertEquals("Wrong WEATHER_CLASS_ID: ", weather_class_id, response.getWeather().get(0).getWeather_class_id());
     }
 
     @Then("MAIN should be (.*)")
@@ -97,9 +97,9 @@ public class WeatherStepDefs {
         Assert.assertEquals("Wrong TYPE: ", type, response.getSys().getType());
     }
 
-    @Then("ID should be (.*)")
-    public void check_id(Integer id){
-        Assert.assertEquals("Wrong ID: ", id, response.getSys().getId());
+    @Then("SYS_CLASS_ID should be (.*)")
+    public void check_sys_class_id(Integer sys_class_id){
+        Assert.assertEquals("Wrong SYS_CLASS_ID: ", sys_class_id, response.getSys().getSys_class_id());
     }
 
     @Then("MESSAGE should be (.*)")
@@ -132,9 +132,9 @@ public class WeatherStepDefs {
         Assert.assertEquals("Wrong DT: ", dt, response.getDt());
     }
 
-    @Then("ID2 should be (.*)")
-    public void check_id2(String id2) {
-        Assert.assertEquals("Wrong ID2: ", id2, response.getId2());
+    @Then("PROPERTY_ID should be (.*)")
+    public void check_property_id(String property_id) {
+        Assert.assertEquals("Wrong PROPERTY_ID: ", property_id, response.getProperty_id());
     }
 
     @Then("NAME should be (.*)")
