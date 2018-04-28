@@ -16,11 +16,11 @@ import java.util.List;
     private int visibility;
     private Wind wind;
     private Clouds clouds;
-    private int dt;
+    private String dt;
     private Sys sys;
-    private int property_id;
+    private Integer id;
     private String name;
-    private int cod;
+    private String cod;
     //    @JsonProperty("MaiN35  nuzhnoe nazvanie")
 
     public Coord getCoord() {
@@ -72,11 +72,11 @@ import java.util.List;
         this.visibility = visibility;
     }
 
-    public int getDt() {
+    public String getDt() {
         return dt;
     }
 
-    public void setDt(int dt) {
+    public void setDt(String dt) {
         this.dt = dt;
     }
 
@@ -92,12 +92,12 @@ import java.util.List;
     public void setSys(Sys sys) {
         this.sys = sys;
     }
-    public int getProperty_id() {
-        return property_id;
+    public Integer getId() {
+        return id;
     }
 
-    public void setProperty_id(int property_id) {
-        this.property_id = property_id;
+    public void setId(Integer id) {
+        this.id = id;
     }
     public String getName() {
         return name;
@@ -106,11 +106,11 @@ import java.util.List;
     public void setName(String name) {
         this.name = name;
     }
-    public int getCod() {
+    public String getCod() {
         return cod;
     }
 
-    public void setCod(int cod) {
+    public void setCod(String cod) {
         this.cod = cod;
     }
 

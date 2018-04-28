@@ -2,17 +2,17 @@ package model.weatherModels;
 
 public class Weather {
 
-    private Integer weather_class_id;
+    private Integer id;
     private String main;
     private String description;
     private String icon;
 
-    public Integer getWeather_class_id() {
-        return weather_class_id;
+    public Integer getId() {
+        return id;
     }
 
-    public void setWeather_class_id(Integer weather_class_id) {
-        this.weather_class_id = weather_class_id;
+    public void id(Integer id) {
+        this.id = id;
     }
 
     public String getMain() {

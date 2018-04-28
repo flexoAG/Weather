@@ -27,9 +27,9 @@ public class WeatherStepDefs {
             Assert.assertEquals("Wrong LAT: ", lat, response.getCoord().getLat());
         }
 
-    @Then("WEATHER_CLASS_ID should be (.*)")
-    public void check_weather_class_id(Integer weather_class_id) {
-        Assert.assertEquals("Wrong WEATHER_CLASS_ID: ", weather_class_id, response.getWeather().get(0).getWeather_class_id());
+    @Then("ID should be (.*)")
+    public void check_id(Integer id) {
+        Assert.assertEquals("Wrong ID: ", id, response.getWeather().get(0).getId());
     }
 
     @Then("MAIN should be (.*)")
@@ -97,9 +97,9 @@ public class WeatherStepDefs {
         Assert.assertEquals("Wrong TYPE: ", type, response.getSys().getType());
     }
 
-    @Then("SYS_CLASS_ID should be (.*)")
-    public void check_sys_class_id(Integer sys_class_id){
-        Assert.assertEquals("Wrong SYS_CLASS_ID: ", sys_class_id, response.getSys().getSys_class_id());
+    @Then("SYS_ID should be (.*)")
+    public void check_sys_id(Integer id){
+        Assert.assertEquals("Wrong ID: ", id, response.getSys().getId());
     }
 
     @Then("MESSAGE should be (.*)")
@@ -123,7 +123,7 @@ public class WeatherStepDefs {
     }
 
     @Then("VISIBILITY should be (.*)")
-    public void check_visibility(String visibility) {
+    public void check_visibility(int visibility) {
         Assert.assertEquals("Wrong VISIBILITY: ", visibility, response.getVisibility());
     }
 
@@ -133,8 +133,8 @@ public class WeatherStepDefs {
     }
 
     @Then("PROPERTY_ID should be (.*)")
-    public void check_property_id(String property_id) {
-        Assert.assertEquals("Wrong PROPERTY_ID: ", property_id, response.getProperty_id());
+    public void check_property_id(Integer id) {
+        Assert.assertEquals("Wrong PROPERTY_ID: ", id, response.getId());
     }
 
     @Then("NAME should be (.*)")
